@@ -1,6 +1,8 @@
+// Ambil semua section & nav link
 var sections = document.querySelectorAll("section");
 var navLinks = document.querySelectorAll("header ul li a");
-l
+
+// Scroll -> aktifkan nav link sesuai section
 window.addEventListener("scroll", function() {
   var current = "";
   sections.forEach(function(section) {
@@ -8,11 +10,58 @@ window.addEventListener("scroll", function() {
       current = section.getAttribute("id");
     }
   });
+
   navLinks.forEach(function(link) {
     link.classList.toggle("active", link.getAttribute("href") === "#" + current);
   });
 });
 
+// Tombol Back to Top
+var btnTop = document.createElement("button");
+btnTop.innerText = "↑";
+btnTop.className = "back-to-top";
+document.body.appendChild(btnTop);
+
+window.addEventListener("scroll", function() {
+  btnTop.classList.toggle("show", window.scrollY > 300);
+});
+
+btnTop.addEventListener("click", function() {
+  window.scrollTo({top: 0, behavior: "smooth"});
+});
+
+// Animasi fade-in tiap section
+var observer = new IntersectionObserver(function(entries, obs) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("fade-in");
+      obs.unobserve(entry.target);
+    }
+  });
+}, {threshold: 0.2, rootMargin: "0px 0px -50px 0px"});
+
+sections.forEach(function(sec) {
+  observer.observe(sec);
+});
+// Ambil semua section & nav link
+var sections = document.querySelectorAll("section");
+var navLinks = document.querySelectorAll("header ul li a");
+
+// Scroll -> aktifkan nav link sesuai section
+window.addEventListener("scroll", function() {
+  var current = "";
+  sections.forEach(function(section) {
+    if (pageYOffset >= section.offsetTop - 120) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach(function(link) {
+    link.classList.toggle("active", link.getAttribute("href") === "#" + current);
+  });
+});
+
+// Tombol Back to Top
 var btnTop = document.createElement("button");
 btnTop.innerText = "↑";
 btnTop.style.cssText = `
@@ -33,6 +82,7 @@ btnTop.addEventListener("click", function() {
   window.scrollTo({top: 0, behavior: "smooth"});
 });
 
+// Animasi fade-in tiap section
 var observer = new IntersectionObserver(function(entries, obs) {
   entries.forEach(function(entry) {
     if (entry.isIntersecting) {
@@ -41,7 +91,6 @@ var observer = new IntersectionObserver(function(entries, obs) {
     }
   });
 }, {threshold: 0.2, rootMargin: "0px 0px -50px 0px"});
-
 
 sections.forEach(function(sec) {
   observer.observe(sec);
