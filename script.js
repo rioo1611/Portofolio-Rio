@@ -1,8 +1,8 @@
-// Ambil semua section & nav link
+
 var sections = document.querySelectorAll("section");
 var navLinks = document.querySelectorAll("header ul li a");
 
-// Scroll -> aktifkan nav link sesuai section
+
 window.addEventListener("scroll", function() {
   var current = "";
   sections.forEach(function(section) {
@@ -16,7 +16,7 @@ window.addEventListener("scroll", function() {
   });
 });
 
-// Tombol Back to Top
+
 var btnTop = document.createElement("button");
 btnTop.innerText = "↑";
 btnTop.className = "back-to-top";
@@ -30,7 +30,7 @@ btnTop.addEventListener("click", function() {
   window.scrollTo({top: 0, behavior: "smooth"});
 });
 
-// Animasi fade-in tiap section
+
 var observer = new IntersectionObserver(function(entries, obs) {
   entries.forEach(function(entry) {
     if (entry.isIntersecting) {
@@ -43,11 +43,11 @@ var observer = new IntersectionObserver(function(entries, obs) {
 sections.forEach(function(sec) {
   observer.observe(sec);
 });
-// Ambil semua section & nav link
+
 var sections = document.querySelectorAll("section");
 var navLinks = document.querySelectorAll("header ul li a");
 
-// Scroll -> aktifkan nav link sesuai section
+
 window.addEventListener("scroll", function() {
   var current = "";
   sections.forEach(function(section) {
@@ -61,7 +61,7 @@ window.addEventListener("scroll", function() {
   });
 });
 
-// Tombol Back to Top
+
 var btnTop = document.createElement("button");
 btnTop.innerText = "↑";
 btnTop.style.cssText = `
@@ -82,7 +82,6 @@ btnTop.addEventListener("click", function() {
   window.scrollTo({top: 0, behavior: "smooth"});
 });
 
-// Animasi fade-in tiap section
 var observer = new IntersectionObserver(function(entries, obs) {
   entries.forEach(function(entry) {
     if (entry.isIntersecting) {
