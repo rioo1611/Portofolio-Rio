@@ -1,123 +1,120 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Satrio Putra Umbara</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Satrio Putra Umbara</title>
 
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <meta name="description" content="Portfolio Satrio Putra Umbara - Software Engineer Student, UI/UX Designer, Web Developer from Jakarta, Indonesia.">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Portfolio</div>
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skillset</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
 
-    
-    <header>
-      <div class="logo">Portfolio</div>
-      <ul>
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skillset</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </header>
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="text">
+      <h3>Hallo, Inilah Saya</h3>
+      <h1>Satrio Putra Umbara</h1>
+      <p>Saya seorang Rekayasa Perangkat Lunak bertempat tinggal di Manggarai, Jakarta, Indonesia. Spesialisasi saya adalah membangun dan mendesain situs web yang luar biasa, Desainer UI/UX.</p>
 
-    
-    <section class="hero" id="home">
-      <div class="text">
-        <h3>Hallo, Inilah Saya</h3>
-        <h1>Satrio Putra Umbara</h1>
-        <p>Saya seorang Rekayasa Perangkat Lunak bertempat tinggal di Manggarai, Jakarta, Indonesia. Spesialisasi saya adalah membangun dan mendesain situs web yang luar biasa, Desainer UI/UX.</p>
-
-        <div class="socials">
-          <a href="https://wa.me/6281289306252" target="_blank"><i class="fab fa-whatsapp"></i></a>
-          <a href="https://www.instagram.com/umbaraaa16" target="_blank"><i class="fab fa-instagram"></i></a>
-        </div>
-
-        <div class="buttons">
-          <a href="cv/satrio-cv.pdf" download>
-            <button class="btn-download">Download CV</button>
-          </a>
-        </div>
+      <div class="socials">
+        <a href="https://wa.me/6281289306252" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/umbaraaa16" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
       </div>
 
-      <div class="image">
-        <img src="/img/WhatsApp_Image_2025-08-20_at_08.09.12_2a1f515d-removebg-preview.png" alt="Portrait of Satrio Putra Umbara"/>
+      <div class="buttons">
+        <a href="cv/satrio-cv.pdf" download>
+          <button class="btn-download">Download CV</button>
+        </a>
       </div>
-    </section>
+    </div>
 
-    
-    <section class="about" id="about">
-  <h2>About Me</h2>
-  <p>
-    Saya seorang pelajar Software Engineer berusia 17 tahun dengan ketertarikan besar pada dunia teknologi.
-       Saya memiliki keahlian dalam UI/UX Design, HTML, CSS, dan JavaScript.  
-       Saya suka membuat website yang responsif dan menarik, serta juga tertarik pada desain grafis.
-    Berikut informasi singkat tentang saya:
-  </p>
+    <div class="image">
+      <img src="img/WhatsApp_Image_2025-08-20_at_08.09.12_2a1f515d-removebg-preview.png" alt="Foto profil Satrio Putra Umbara"/>
+    </div>
+  </section>
 
-  <div class="about-table">
-    <table>
-      <tr>
-        <th>Nama</th>
-        <td>Satrio Putra Umbara</td>
-      </tr>
-      <tr>
-        <th>Email</th>
-        <td>satrioputraumbara@gmail.com</td>
-      </tr>
-      <tr>
-        <th>Domisili</th>
-        <td>Jakarta, Indonesia</td>
-      </tr>
-      <tr>
-        <th>Pendidikan</th>
-        <td>Rekayasa Perangkat Lunak 
-        <br>SMK NEGERI 40 JAKARTA (2025 - Sekarang)
-        </td>
-      </tr>
-      <tr>
-        <th>Hobi</th>
-        <td>Sepak Bola, Futsal, Badminton</td>
-      </tr>
-    </table>
-  </div> 
-</section>
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      Saya seorang pelajar Software Engineer berusia 17 tahun dengan ketertarikan besar pada dunia teknologi.
+      Saya memiliki keahlian dalam UI/UX Design, HTML, CSS, dan JavaScript.  
+      Saya suka membuat website yang responsif dan menarik, serta juga tertarik pada desain grafis.
+      Berikut informasi singkat tentang saya:
+    </p>
 
+    <div class="about-table">
+      <table>
+        <tr>
+          <th>Nama</th>
+          <td>Satrio Putra Umbara</td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td>satrioputraumbara@gmail.com</td>
+        </tr>
+        <tr>
+          <th>Domisili</th>
+          <td>Jakarta, Indonesia</td>
+        </tr>
+        <tr>
+          <th>Pendidikan</th>
+          <td>Rekayasa Perangkat Lunak 
+          <br>SMK NEGERI 40 JAKARTA (2025 - Sekarang)
+          </td>
+        </tr>
+        <tr>
+          <th>Hobi</th>
+          <td>Sepak Bola, Futsal, Badminton</td>
+        </tr>
+      </table>
+    </div> 
+  </section>
 
-    
-    <section class="skills" id="skills">
-      <h2>Skillset</h2>
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <h2>Skillset</h2>
 
-      <h3>Current Focus</h3>
-      <div class="skills-grid">
-        <div><i class="devicon-vscode-plain colored"></i><p>VSCode</p></div>
-        <div><i class="devicon-figma-plain colored"></i><p>Figma</p></div>
-      </div>
+    <h3>Current Focus</h3>
+    <div class="skills-grid">
+      <div><i class="devicon-vscode-plain colored"></i><p>VSCode</p></div>
+      <div><i class="devicon-figma-plain colored"></i><p>Figma</p></div>
+    </div>
 
-      <h3>Experience With</h3>
-      <div class="skills-grid">
-        <div><i class="devicon-html5-plain colored"></i><p>HTML</p></div>
-        <div><i class="devicon-css3-plain colored"></i><p>CSS</p></div>
-        <div><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
-        <div><i class="devicon-java-plain colored"></i><p>Java</p></div>
-        <div><i class="devicon-python-plain colored"></i><p>Python</p></div>
-        <div><i class="devicon-php-plain colored"></i><p>PHP</p></div>
-        <div><i class="devicon-cplusplus-plain colored"></i><p>C++</p></div>
-      </div>
-    </section>
+    <h3>Experience With</h3>
+    <div class="skills-grid">
+      <div><i class="devicon-html5-plain colored"></i><p>HTML</p></div>
+      <div><i class="devicon-css3-plain colored"></i><p>CSS</p></div>
+      <div><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
+      <div><i class="devicon-java-plain colored"></i><p>Java</p></div>
+      <div><i class="devicon-python-plain colored"></i><p>Python</p></div>
+      <div><i class="devicon-php-plain colored"></i><p>PHP</p></div>
+      <div><i class="devicon-cplusplus-plain colored"></i><p>C++</p></div>
+    </div>
+  </section>
 
-    
-    <section id="projects" class="projects">
+  <!-- Projects -->
+  <section id="projects" class="projects">
     <h2>Projects</h2>
 
     <div class="project-container">
-
       <div class="project-box">
         <i class="fab fa-html5"></i>
         <h3>Portfolio Website</h3>
@@ -141,89 +138,135 @@
         <p><b>Tech:</b> Figma</p>
         <a href="https://www.figma.com/design/9sTJOWhh1Ed4TlLHdiHXkE/Projek-Desain-Bisnis?node-id=0-1" target="_blank">Figma</a>
       </div>
-
     </div>
   </section>
 
-
-    
-    <section class="experience" id="experience">
-      <h2>Experience & Education</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-icon"><i class="fas fa-school"></i></div>
-          <div class="timeline-content">
-            <h4>SMK NEGERI 40 JAKARTA</h4>
-            <p><strong>Rekayasa Perangkat Lunak</strong><br>
-            2025 - Sekarang<br>
-            Belajar kejuruan mengenai ngoding, desain, dan bisnis.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
-          <div class="timeline-content">
-            <h4>Yang pernah dipelajari</h4>
-            <p>UI/UX<br>
-            Saya pernah mempelajari HTML, JAVASCRIPT, CSS, C#</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-icon"><i class="fas fa-certificate"></i></div>
-          <div class="timeline-content">
-            <h4>Certifications</h4>
-            <p>
-              <a href="/img/WhatsApp Image 2025-08-21 at 20.46.08_a118c72e.jpg" target="_blank">Computer Science by Minecraft (2025)</a><br>
-              <a href="/img/siberasia.jpg" target="_blank">Digital Business and CyberSecurity SiberAsia (2024)</a>
-            </p>
-          </div>
+  <!-- Experience -->
+  <section class="experience" id="experience">
+    <h2>Experience & Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-school"></i></div>
+        <div class="timeline-content">
+          <h4>SMK NEGERI 40 JAKARTA</h4>
+          <p><strong>Rekayasa Perangkat Lunak</strong><br>
+          2025 - Sekarang<br>
+          Belajar kejuruan mengenai ngoding, desain, dan bisnis.</p>
         </div>
       </div>
-    </section>
-    <section class="contact" id="contact">
-      <h2>Contact Me</h2>
-      <p>Jika ingin bekerja sama atau sekadar menyapa, silakan hubungi saya melalui form di bawah ini:</p>
-      
-      <form action="https://formspree.io/f/your-form-id" method="POST">
-        <div class="form-group">
-          <label for="name">Nama</label>
-          <input type="text" id="name" name="name" required>
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+        <div class="timeline-content">
+          <h4>Pengalaman Belajar</h4>
+          <p>UI/UX<br>
+          Saya pernah mempelajari HTML, JAVASCRIPT, CSS, C#</p>
         </div>
-
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="_replyto" required>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-certificate"></i></div>
+        <div class="timeline-content">
+          <h4>Certifications</h4>
+          <p>
+            <a href="img/WhatsApp Image 2025-08-21 at 20.46.08_a118c72e.jpg" target="_blank">Computer Science by Minecraft (2025)</a><br>
+            <a href="img/siberasia.jpg" target="_blank">Digital Business and CyberSecurity SiberAsia (2024)</a>
+          </p>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="form-group">
-          <label for="message">Pesan</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Jika ingin bekerja sama atau sekadar menyapa, silakan hubungi saya melalui form di bawah ini:</p>
+    
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <div class="form-group">
+        <label for="name">Nama</label>
+        <input type="text" id="name" name="name" required>
+      </div>
 
-        <button type="submit" class="btn-send">Kirim</button>
-      </form>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
 
-      <div class="contact-info">
-  <div class="contact-item">
-    <i class="fas fa-envelope"></i>
-    <span>satrioputraumbara@gmail.com</span>
+      <div class="form-group">
+        <label for="message">Pesan</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="btn-send">Kirim</button>
+    </form>
+
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <span>satrioputraumbara@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <i class="fab fa-whatsapp"></i>
+        <a href="https://wa.me/6281289306252" target="_blank">WhatsApp</a>
+      </div>
+      <div class="contact-item">
+        <i class="fab fa-instagram"></i>
+        <a href="https://instagram.com/umbaraaa16" target="_blank">@umbaraaa16</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+  <div class="footer-container">
+    
+    <!-- Kontak -->
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p><i class="fas fa-comments"></i> Chat With Me</p>
+      <p><i class="fas fa-phone"></i> +62 812 8930 6252</p>
+      <p><i class="fas fa-envelope"></i> satrioputraumbara@gmail.com</p>
+    </div>
+
+    <!-- Solutions -->
+    <div class="footer-col">
+      <h3>Solutions</h3>
+      <ul>
+        <li><a href="#">Web Design</a></li>
+        <li><a href="#">UI/UX</a></li>
+        <li><a href="#">Frontend Development</a></li>
+        <li><a href="#">Backend Development</a></li>
+      </ul>
+    </div>
+
+    <!-- Company -->
+    <div class="footer-col">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources + Sosial -->
+    <div class="footer-col">
+      <h3>Resources</h3>
+      <ul>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Certificates</a></li>
+        <li><a href="#">Docs</a></li>
+      </ul>
+      </div>
+    </div>
+
   </div>
-  <div class="contact-item">
-    <i class="fab fa-whatsapp"></i>
-    <a href="https://wa.me/6281289306252" target="_blank">WhatsApp</a>
+
+  <div class="footer-bottom">
+    <p>© 2025 Satrio Putra Umbara | Built with ❤️ & Passion</p>
   </div>
-  <div class="contact-item">
-    <i class="fab fa-instagram"></i>
-    <a href="https://instagram.com/umbaraaa16" target="_blank">@umbaraaa16</a>
-  </div>
-</div>
+</footer>
 
 
-    <script src="script.js"></script>
-  </body>
-  </html>
-    </script>
-
-  </body>
-  </html>
-
-
+  <script src="script.js"></script>
+</body>
+</html>
