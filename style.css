@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background: #121e2e;
+  background: #1a2539;
   color: #fff;
   line-height: 1.6;
 }
@@ -134,7 +134,7 @@ section {
 .about-table table {
   width: 100%;
   border-collapse: collapse;
-  background: #da1828;
+  background: #101f47;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
@@ -144,7 +144,7 @@ section {
 .about-table td {
   padding: 15px 20px;
   text-align: left;
-  border-bottom: 1px solid rgba(238, 25, 25, 0.1);
+  border-bottom: 1px solid rgba(12, 23, 87, 0.1);
 }
 
 .about-table th {
